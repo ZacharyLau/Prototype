@@ -4,6 +4,19 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 -->
 <head>
+    
+    <style>
+        html, body    { margin:0; padding:0; width:100%; height:100%; }
+
+        #head         { width:100%; height:100px; background:black; color:white; }
+        #head > h1    { margin:0; }
+
+        #body         { position:absolute; width:100%; top:100px; bottom:25px; background:red; }
+        #body > div   { position:absolute !important; }
+        #body-sidebar { width:200px; top:0; bottom:0; background:black; color:white; }
+        #body-content { left:200px; right:0; top:0; bottom:0; background:white; overflow:scroll; }
+        #body-content > img { margin:25px; width:500px; vertical-align:middle; }    
+    </style>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,7 +82,7 @@
 </nav>
 
 <!-- Header Carousel -->
-<header id="myCarousel" class="carousel slide">
+<header id="myCarousel" class="carousel slide" style="height: auto">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -221,7 +234,7 @@
             <p>广播节目请关注荔枝FM 826042，优酷视频请关注口语加油站或What’s up English。微博请关注：英文小咖和主播互动。Our slogan is Enjoy English, Enjoy Life, Let’s keep in touch everyday.</p>
         </div>
         <div class="col-md-6">
-            <img class="img-responsive" src="/pics/cover.jpg" alt="">
+            <img class="img-responsive" src="pics/cover.jpg" alt="">
         </div>
     </div>
     <!-- /.row -->
